@@ -1,0 +1,188 @@
+/* Linkin Park–inspired industrial dark theme (original artwork/text only) */
+
+:root{
+  --bg0:#050507;
+  --bg1:#0b0b10;
+  --panel: rgba(20,20,28,.72);
+  --panel2: rgba(255,255,255,.06);
+  --stroke: rgba(255,255,255,.12);
+  --text: #e7e7f0;
+  --muted: rgba(231,231,240,.7);
+  --accent:#c7ff3c;
+  --accent2:#69d2ff;
+  --danger:#ff3c3c;
+  --shadow: 0 18px 60px rgba(0,0,0,.55);
+}
+
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 70% 10%, rgba(105,210,255,.12), transparent 60%),
+    radial-gradient(900px 540px at 20% 0%, rgba(199,255,60,.10), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  overflow-x:hidden;
+}
+
+.wrap{ min-height:100%; display:flex; align-items:center; justify-content:center; padding:18px; }
+
+
+.hero{
+  width: 720px;
+  max-width: 100%;
+}
+
+.grain{ display:none; }
+
+
+.topbar{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.brand{ display:flex; align-items:center; gap:12px; }
+.logo{
+  width:42px; height:42px; border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:900;
+  letter-spacing:.08em;
+  background: linear-gradient(135deg, rgba(199,255,60,.25), rgba(105,210,255,.18));
+  border:1px solid var(--stroke);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.name{ font-weight:800; letter-spacing:.12em; text-transform:uppercase; font-size:13px; color: var(--muted); }
+
+datebox{
+  padding:10px 14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  font-weight:700;
+  letter-spacing:.06em;
+  color: rgba(231,231,240,.85);
+  font-size:12px;
+}
+
+.title{
+  margin:0 0 18px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height:1.05;
+  letter-spacing:.02em;
+}
+
+.accent{ color: var(--accent); text-shadow: 0 0 22px rgba(199,255,60,.25); }
+.muted{ color: var(--muted); }
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 22px;
+  padding: 20px 18px 18px;
+  box-shadow: var(--shadow);
+  position:relative;
+  overflow:hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute; inset:-2px;
+  background:
+    linear-gradient(90deg, rgba(105,210,255,.0), rgba(105,210,255,.12), rgba(199,255,60,.10), rgba(105,210,255,.0));
+  transform: translateX(-40%);
+  opacity:.18;
+  filter: blur(14px);
+}
+
+
+.card-title{
+  position:relative;
+  text-align:center;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:12px;
+  color: rgba(231,231,240,.75);
+  margin-bottom:14px;
+}
+
+.countdown{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.unit{ text-align:center; }
+.num{
+  font-size: clamp(34px, 5.5vw, 60px);
+  font-weight:900;
+  letter-spacing:.05em;
+  color: #f6f6ff;
+  text-shadow: none;
+}
+
+.lab{
+  margin-top:6px;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color: rgba(231,231,240,.65);
+  font-weight:800;
+}
+
+.sep{
+  font-size: 44px;
+  line-height:1;
+  color: rgba(231,231,240,.35);
+  font-weight:900;
+}
+
+.birthday{
+  position:relative;
+  margin-top:14px;
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(199,255,60,.28);
+  background: rgba(199,255,60,.08);
+  text-align:center;
+}
+
+.badge{
+  font-size: 28px;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
+}
+.happy{
+  margin-top:8px;
+  font-weight:950;
+  font-size: clamp(22px, 3.2vw, 32px);
+  letter-spacing:.03em;
+  color: #f1ffd6;
+}
+.sub{
+  margin-top:6px;
+  color: rgba(241,255,214,.75);
+  font-weight:700;
+  letter-spacing:.06em;
+}
+
+.footer{
+  margin-top:14px;
+  text-align:center;
+  color: rgba(231,231,240,.55);
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:12px;
+}
+
+.hint{ display:inline-block; padding:8px 12px; border-radius:999px; border:1px dashed rgba(255,255,255,.14); background: rgba(255,255,255,.03); }
+

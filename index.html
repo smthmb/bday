@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matt's birthday countdown</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="grain" aria-hidden="true"></div>
+      <div class="topbar">
+        <div class="brand">
+          <span class="name">Matt's Birthday Countdown</span>
+        </div>
+        <div class="datebox" id="liveDate">—</div>
+      </div>
+
+      <h1 class="title">
+        <span class="accent">June 22</span>
+        <span class="muted">— 3:30 PM</span>
+      </h1>
+
+      <section class="card" aria-live="polite">
+        <div class="card-title">Time Remaining</div>
+        <div class="countdown" role="timer" aria-label="Countdown timer">
+          <div class="unit">
+            <div class="num" id="days">00</div>
+            <div class="lab">Days</div>
+          </div>
+          <div class="sep" aria-hidden="true">:</div>
+          <div class="unit">
+            <div class="num" id="hours">00</div>
+            <div class="lab">Hours</div>
+          </div>
+          <div class="sep" aria-hidden="true">:</div>
+          <div class="unit">
+            <div class="num" id="minutes">00</div>
+            <div class="lab">Minutes</div>
+          </div>
+          <div class="sep" aria-hidden="true">:</div>
+          <div class="unit">
+            <div class="num" id="seconds">00</div>
+            <div class="lab">Seconds</div>
+          </div>
+        </div>
+
+        <div class="birthday" id="birthday" hidden>
+          <div class="badge">🎉</div>
+          <div class="happy">Happy Birthday, Matt!</div>
+          <div class="sub">Have a wonderful birthday.</div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="hint">Poland time • Live countdown</span>
+      </footer>
+    </header>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
